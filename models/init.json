@@ -1,0 +1,21 @@
+[
+    {
+        "type": "Student",
+        "id": "14251104129",
+        "name": "陈正权",
+        "sex": "man",
+        "class": "142511041",
+        "page": [{
+            "type": "1001",
+            "p_id": "10001"
+        }]
+    },
+    {
+        "type": "Teacher",
+        "id": "142511041",
+        "name": "陈正权",
+        "pwd": "jdlasjldjalsda",
+        "class": "142511041",
+        "token": "lhlasdioadasmdnajdasd"
+    }
+]
