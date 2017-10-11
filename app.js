@@ -72,5 +72,5 @@ app.use('/api', api);
 // });
 
 // 监听端口
-app.listen(8000);
-console.log('success listen at port:8000......');
+app.listen(8080);
+console.log('success listen at port:8080......');
