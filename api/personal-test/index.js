@@ -96,12 +96,10 @@ exports.analysisTestRes = (req, res) => {
                 throw err;
             } else {
                 if (doc) {
-                    console.log(doc);
                     db.Student.find({ class: doc.class }, (error, data) => {
                         if (error) {
                             throw error;
                         } else {
-                            console.log(data);
                             if (data && data.length) {
                                 res.send(respObj.responseObj(0, 'success', data));
                             } else {
@@ -124,7 +122,7 @@ exports.analysisTestRes = (req, res) => {
  */
 exports.submitTestAnswer = (req, res) => {
     const user = req.body;
-    if (user.id && user.class && user.value && user.type && user.name) {
+    if (user.id && user.class && (user.value.toString()) && user.type && user.name) {
         db.Student.findOne({ id: user.id, class: user.class }, (error, data) => {
             if (error) {
                 throw error;
